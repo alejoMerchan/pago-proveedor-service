@@ -3,7 +3,8 @@ package com.mientrascompila.pago.proveedor.clients;
 
 
 
-import com.rabbitmq.client.Consumer;
+
+import com.mientrascompila.pago.proveedor.services.Consumer;
 import org.springframework.amqp.core.MessageListener;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -16,8 +17,8 @@ import org.springframework.context.annotation.Bean;
  */
 public class RabbitMqClient {
 
-    public final static String publishQname = "";
-    public final static String consumeQname = "";
+    public final static String publishQname = "demo";
+    public final static String consumeQname = "demo";
 
     @Bean
     public Jackson2JsonMessageConverter jsonMessageConverter(){
