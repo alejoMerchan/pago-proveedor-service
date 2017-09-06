@@ -79,7 +79,10 @@ public class PagoProveedorService {
 
     }
 
-
+    /**
+     * Metodo encargado de generar el evento de validar politicas.
+     * @param id
+     */
     private void validarPoliticaPago(Integer id) {
         producer.sendMessage(id.toString());
     }
